@@ -33,7 +33,6 @@ console.log(nome)
 
 const idade = 23
 console.log(idade)
-
 idade = 24
 
 // Console e Debug
@@ -90,7 +89,13 @@ atribuem valores a variáveis. O operador básico é o igual (=), mas existem at
 */
 
 //     Operadores aritméticos
-/*
+//opradores aritiméticos ( + ; - ; * ; / ; %)
+ console.log(n1=n2)// soma  
+ console.log(n1-n2)// subtração
+ console.log(n1*n2)//multiplicação
+ console.log(n1/n2)//divisão
+ /*
+ console.log(10%3)
 realizam cálculos matemáticos básicos. Incluem adição (+), subtração (-), multiplicação (*), divisão (/) e módulo (%), que retorna o resto da divisão.
  Por exemplo, 5 + 3 resulta em 8, e 10 % 3 resulta em 1.
 */
@@ -100,17 +105,90 @@ realizam cálculos matemáticos básicos. Incluem adição (+), subtração (-),
  comparam valores. === testa igualdade estrita (valor e tipo), enquanto !== testa se os valores são diferentes.
  Operadores como >, <, >=, <= comparam valores numéricos ou de string.
 */
+console.log(n1==n2)
+console.log(n1 != n2)
+console.log(n1 >n2)
+console.log(n1<n2)
+console.log(n1<=n2)
+console.log(n1=>n2)
 
-//     Operadores lógicos
+//     Operadores lógicos ! - não/not || - ou / OR && - e / AND
+let altura= 1.80
+let peso= 80 
+let tipo = "Criança"
+
+//muda o resultado final,  se for verdadeiro vira falso e se for falso vra vgerdadeiro
+console.log(!10>5)
+
+console.log(altura > 1.5 && pesso < 150 && tipo !="criança")
+//com && todas as verificaçoes devem ser verdadeiras para o resultando final ser verdadeiro
+
+//com || apenas uma verificação precisa ser verdadeira 
+console.log(altura > 1.5 || peso < 150 || tipo !="criança")
+
 /*
 combinam expressões booleanas. && (E) retorna verdadeiro apenas se ambas as expressões forem verdadeiras, || (OU) retorna verdadeiro se pelo menos uma for verdadeira, e ! (NÃO) inverte o valor lógico.
 */
 
 // Estrutura
 //     Estrutura de controle/decisão
+let carro = "fiat"
+
+ if (carro == "bmw"){
+    console.log("você ta bem  mais ou menos")
+ }else{
+   console.log("A vida esta Progredindo") 
+ }
+let idadealuno = 20
+if (idadealuno>= 18){
+    consolelog("maior de idade")
+}else{
+    console.log("menor de idade")
+}
 
 //     Laços de repetição
 
+let controle = 1
+while(controle <=10){
+console.log(controle)
+controle = controle + 1
+}
+
+
+
+controle = 1 
+while(controle >=10){ 
+    console.log( 7*controle)
+    controle = controle + 1
+}
+
+
 // Arrays --> vetor
+let zoologico =[ 'leão','elefante','zebra','ariranha','lobo guará','arara']
+console.log(zoologico[2])
+ console.log(zoologico.length)
+
+ let frutas [ '🍓','🍊','🍍','🍐','🍌','🍇','🍉']
+console.log(frutas)
+frutas.push('🍎')
+console.log(frutas)
+
+let alunos = []
+alunos.push("joão")
+alunos.push("renata")
+alunos.push("roberto")
+console.log(alunos)
 
 // Funções personalizadas
+function(){
+    console.log("olá")
+    console.log("seja Bem Vindo")
+    console.log(" :) ")
+}
+mensagem()
+mensagem()
+
+function conta (horas, sal_hora){
+    console.log(horas*sal_hora)
+}
+conta(140, 75)
